@@ -331,3 +331,447 @@
 2019-11-27 15:10:46.329   MAIN   INF   Streaming overview
 2019-11-27 15:15:10.136   MAIN   INF   Server running
 2019-11-27 15:15:10.137   MAIN   INF   Streaming overview
+2019-11-27 18:28:28.372   MAIN   INF   Server running
+2019-11-27 18:28:28.373   MAIN   INF   Streaming overview
+2019-11-27 18:28:28.382   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:28:28.382   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:28:37.675   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:28:37.680   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:28:38.383   MAIN   INF   Streaming overview
+2019-11-27 18:28:38.391   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:28:38.392   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:28:48.394   MAIN   INF   Streaming overview
+2019-11-27 18:28:48.402   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:28:48.402   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:28:58.404   MAIN   INF   Streaming overview
+2019-11-27 18:28:58.412   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:28:58.413   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:29:08.415   MAIN   INF   Streaming overview
+2019-11-27 18:29:08.424   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:29:08.424   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:29:18.429   MAIN   INF   Streaming overview
+2019-11-27 18:29:18.438   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:29:18.438   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:29:28.439   MAIN   INF   Streaming overview
+2019-11-27 18:29:28.448   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:29:28.448   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:29:38.448   MAIN   INF   Streaming overview
+2019-11-27 18:29:38.461   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:29:38.461   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:29:42.244   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:29:42.250   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:29:48.464   MAIN   INF   Streaming overview
+2019-11-27 18:29:48.473   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:29:48.473   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:29:52.735   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:29:52.741   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:29:58.474   MAIN   INF   Streaming overview
+2019-11-27 18:29:58.483   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:29:58.483   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:29:59.417   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:29:59.421   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:30:08.487   MAIN   INF   Streaming overview
+2019-11-27 18:30:08.499   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:30:08.499   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:30:08.743   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:30:08.748   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:30:18.502   MAIN   INF   Streaming overview
+2019-11-27 18:30:18.515   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:30:18.515   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:30:27.653   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:30:27.661   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:30:28.519   MAIN   INF   Streaming overview
+2019-11-27 18:30:28.526   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:30:28.526   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:30:34.274   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:30:34.280   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:30:38.527   MAIN   INF   Streaming overview
+2019-11-27 18:30:38.537   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:30:38.537   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:30:48.539   MAIN   INF   Streaming overview
+2019-11-27 18:30:48.547   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:30:48.547   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:30:50.653   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:30:50.659   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:30:58.547   MAIN   INF   Streaming overview
+2019-11-27 18:30:58.561   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:30:58.561   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:31:01.915   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:31:01.920   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:31:08.565   MAIN   INF   Streaming overview
+2019-11-27 18:31:08.573   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:31:08.573   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:31:17.678   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:31:17.683   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:31:18.575   MAIN   INF   Streaming overview
+2019-11-27 18:31:18.585   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:31:18.585   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:31:26.288   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:31:26.294   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:31:28.586   MAIN   INF   Streaming overview
+2019-11-27 18:31:28.595   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:31:28.595   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:31:36.265   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:31:36.272   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:31:38.600   MAIN   INF   Streaming overview
+2019-11-27 18:31:38.609   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:31:38.609   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:31:48.610   MAIN   INF   Streaming overview
+2019-11-27 18:31:48.619   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:31:48.619   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:31:48.675   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:31:48.687   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:31:55.451   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:31:55.456   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:31:58.622   MAIN   INF   Streaming overview
+2019-11-27 18:31:58.629   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:31:58.629   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:31:58.668   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:31:58.675   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:32:08.295   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:32:08.302   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:32:08.633   MAIN   INF   Streaming overview
+2019-11-27 18:32:08.641   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:32:08.642   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:32:18.647   MAIN   INF   Streaming overview
+2019-11-27 18:32:18.657   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:32:18.657   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:32:28.450   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:32:28.456   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:32:28.657   MAIN   INF   Streaming overview
+2019-11-27 18:32:28.664   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:32:28.664   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:32:38.666   MAIN   INF   Streaming overview
+2019-11-27 18:32:38.675   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:32:38.675   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:32:48.675   MAIN   INF   Streaming overview
+2019-11-27 18:32:48.684   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:32:48.684   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:32:58.684   MAIN   INF   Streaming overview
+2019-11-27 18:32:58.693   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:32:58.693   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:33:08.698   MAIN   INF   Streaming overview
+2019-11-27 18:33:08.707   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:33:08.708   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:33:18.713   MAIN   INF   Streaming overview
+2019-11-27 18:33:18.761   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:33:18.761   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:33:28.765   MAIN   INF   Streaming overview
+2019-11-27 18:33:28.774   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:33:28.775   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:33:38.780   MAIN   INF   Streaming overview
+2019-11-27 18:33:38.791   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:33:38.791   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:33:48.797   MAIN   INF   Streaming overview
+2019-11-27 18:33:48.806   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:33:48.806   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:33:58.812   MAIN   INF   Streaming overview
+2019-11-27 18:33:58.822   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:33:58.822   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:34:08.825   MAIN   INF   Streaming overview
+2019-11-27 18:34:08.834   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:34:08.834   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:34:18.839   MAIN   INF   Streaming overview
+2019-11-27 18:34:18.849   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:34:18.849   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:34:28.850   MAIN   INF   Streaming overview
+2019-11-27 18:34:28.861   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:34:28.861   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:34:38.863   MAIN   INF   Streaming overview
+2019-11-27 18:34:38.873   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:34:38.873   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:34:48.878   MAIN   INF   Streaming overview
+2019-11-27 18:34:48.886   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:34:48.886   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:34:58.890   MAIN   INF   Streaming overview
+2019-11-27 18:34:58.900   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:34:58.900   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:35:08.905   MAIN   INF   Streaming overview
+2019-11-27 18:35:08.915   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:35:08.915   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:35:18.916   MAIN   INF   Streaming overview
+2019-11-27 18:35:18.927   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:35:18.927   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:35:28.930   MAIN   INF   Streaming overview
+2019-11-27 18:35:28.939   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:35:28.939   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:35:38.940   MAIN   INF   Streaming overview
+2019-11-27 18:35:38.951   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:35:38.952   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:35:48.952   MAIN   INF   Streaming overview
+2019-11-27 18:35:48.961   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:35:48.962   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:35:58.965   MAIN   INF   Streaming overview
+2019-11-27 18:35:58.975   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:35:58.975   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:36:08.980   MAIN   INF   Streaming overview
+2019-11-27 18:36:08.990   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:36:08.990   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:36:18.994   MAIN   INF   Streaming overview
+2019-11-27 18:36:19.005   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:36:19.005   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:36:29.008   MAIN   INF   Streaming overview
+2019-11-27 18:36:29.018   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:36:29.018   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:36:39.021   MAIN   INF   Streaming overview
+2019-11-27 18:36:39.029   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:36:39.029   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:36:49.030   MAIN   INF   Streaming overview
+2019-11-27 18:36:49.036   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:36:49.037   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:36:59.039   MAIN   INF   Streaming overview
+2019-11-27 18:36:59.051   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:36:59.051   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:37:09.054   MAIN   INF   Streaming overview
+2019-11-27 18:37:09.063   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:37:09.063   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:37:19.065   MAIN   INF   Streaming overview
+2019-11-27 18:37:19.074   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:37:19.074   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:37:29.075   MAIN   INF   Streaming overview
+2019-11-27 18:37:29.084   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:37:29.084   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:37:39.085   MAIN   INF   Streaming overview
+2019-11-27 18:37:39.097   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:37:39.097   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:37:49.101   MAIN   INF   Streaming overview
+2019-11-27 18:37:49.112   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:37:49.112   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:37:59.114   MAIN   INF   Streaming overview
+2019-11-27 18:37:59.124   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:37:59.124   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:38:09.129   MAIN   INF   Streaming overview
+2019-11-27 18:38:09.140   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:38:09.140   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:38:19.145   MAIN   INF   Streaming overview
+2019-11-27 18:38:19.157   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:38:19.157   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:38:29.158   MAIN   INF   Streaming overview
+2019-11-27 18:38:29.168   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:38:29.168   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:38:39.170   MAIN   INF   Streaming overview
+2019-11-27 18:38:39.217   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:38:39.218   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:38:49.221   MAIN   INF   Streaming overview
+2019-11-27 18:38:49.231   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:38:49.231   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:38:59.232   MAIN   INF   Streaming overview
+2019-11-27 18:38:59.240   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:38:59.240   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:39:09.244   MAIN   INF   Streaming overview
+2019-11-27 18:39:09.254   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:39:09.254   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:39:19.258   MAIN   INF   Streaming overview
+2019-11-27 18:39:19.267   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:39:19.267   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:39:29.272   MAIN   INF   Streaming overview
+2019-11-27 18:39:29.282   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:39:29.282   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:39:39.287   MAIN   INF   Streaming overview
+2019-11-27 18:39:39.301   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:39:39.301   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:39:49.305   MAIN   INF   Streaming overview
+2019-11-27 18:39:49.314   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:39:49.314   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:39:59.320   MAIN   INF   Streaming overview
+2019-11-27 18:39:59.330   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:39:59.330   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:40:09.330   MAIN   INF   Streaming overview
+2019-11-27 18:40:09.339   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:40:09.339   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:40:19.340   MAIN   INF   Streaming overview
+2019-11-27 18:40:19.348   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:40:19.348   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:40:29.354   MAIN   INF   Streaming overview
+2019-11-27 18:40:29.364   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:40:29.364   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:40:39.365   MAIN   INF   Streaming overview
+2019-11-27 18:40:39.374   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:40:39.374   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:40:49.377   MAIN   INF   Streaming overview
+2019-11-27 18:40:49.386   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:40:49.386   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:40:59.387   MAIN   INF   Streaming overview
+2019-11-27 18:40:59.398   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:40:59.398   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:41:09.403   MAIN   INF   Streaming overview
+2019-11-27 18:41:09.412   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:41:09.412   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:41:19.416   MAIN   INF   Streaming overview
+2019-11-27 18:41:19.424   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:41:19.424   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:41:29.429   MAIN   INF   Streaming overview
+2019-11-27 18:41:29.440   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:41:29.440   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:41:39.442   MAIN   INF   Streaming overview
+2019-11-27 18:41:39.453   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:41:39.453   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:41:49.456   MAIN   INF   Streaming overview
+2019-11-27 18:41:49.466   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:41:49.466   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:41:59.470   MAIN   INF   Streaming overview
+2019-11-27 18:41:59.479   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:41:59.479   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:42:09.481   MAIN   INF   Streaming overview
+2019-11-27 18:42:09.491   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:42:09.491   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:42:19.496   MAIN   INF   Streaming overview
+2019-11-27 18:42:19.506   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:42:19.506   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:42:29.511   MAIN   INF   Streaming overview
+2019-11-27 18:42:29.521   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:42:29.521   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:42:39.522   MAIN   INF   Streaming overview
+2019-11-27 18:42:39.531   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:42:39.531   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:42:49.536   MAIN   INF   Streaming overview
+2019-11-27 18:42:49.545   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:42:49.546   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:42:59.550   MAIN   INF   Streaming overview
+2019-11-27 18:42:59.559   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:42:59.559   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:43:09.561   MAIN   INF   Streaming overview
+2019-11-27 18:43:09.570   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:43:09.570   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:43:19.573   MAIN   INF   Streaming overview
+2019-11-27 18:43:19.583   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:43:19.583   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:43:29.587   MAIN   INF   Streaming overview
+2019-11-27 18:43:29.596   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:43:29.597   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:43:38.752   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:43:38.758   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:43:39.601   MAIN   INF   Streaming overview
+2019-11-27 18:43:39.613   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:43:39.613   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:43:49.140   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:43:49.145   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:43:49.614   MAIN   INF   Streaming overview
+2019-11-27 18:43:49.621   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:43:49.621   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:43:54.478   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:43:54.483   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:43:59.623   MAIN   INF   Streaming overview
+2019-11-27 18:43:59.632   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:43:59.632   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:44:09.637   MAIN   INF   Streaming overview
+2019-11-27 18:44:09.647   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:44:09.647   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:44:19.649   MAIN   INF   Streaming overview
+2019-11-27 18:44:19.658   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:44:19.658   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:44:29.660   MAIN   INF   Streaming overview
+2019-11-27 18:44:29.669   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:44:29.669   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:44:39.673   MAIN   INF   Streaming overview
+2019-11-27 18:44:39.682   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:44:39.682   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:44:49.687   MAIN   INF   Streaming overview
+2019-11-27 18:44:49.698   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:44:49.698   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:44:59.699   MAIN   INF   Streaming overview
+2019-11-27 18:44:59.708   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:44:59.708   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:45:09.713   MAIN   INF   Streaming overview
+2019-11-27 18:45:09.723   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:45:09.724   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:45:19.724   MAIN   INF   Streaming overview
+2019-11-27 18:45:19.736   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:45:19.736   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:45:22.613   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:45:22.622   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:45:29.738   MAIN   INF   Streaming overview
+2019-11-27 18:45:29.747   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:45:29.747   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:45:39.752   MAIN   INF   Streaming overview
+2019-11-27 18:45:39.763   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:45:39.763   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:45:49.764   MAIN   INF   Streaming overview
+2019-11-27 18:45:49.771   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:45:49.771   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:45:59.776   MAIN   INF   Streaming overview
+2019-11-27 18:45:59.786   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:45:59.786   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:46:09.792   MAIN   INF   Streaming overview
+2019-11-27 18:46:09.802   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:46:09.802   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:46:19.802   MAIN   INF   Streaming overview
+2019-11-27 18:46:19.810   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:46:19.810   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:46:28.954   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:46:28.961   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:46:29.811   MAIN   INF   Streaming overview
+2019-11-27 18:46:29.819   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:46:29.819   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:46:34.901   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:46:34.907   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:46:39.820   MAIN   INF   Streaming overview
+2019-11-27 18:46:39.829   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:46:39.829   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:46:49.831   MAIN   INF   Streaming overview
+2019-11-27 18:46:49.841   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:46:49.841   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:46:59.847   MAIN   INF   Streaming overview
+2019-11-27 18:46:59.858   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:46:59.858   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:47:01.684   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:47:01.690   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:47:09.861   MAIN   INF   Streaming overview
+2019-11-27 18:47:09.870   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:47:09.870   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:47:11.205   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:47:11.212   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:47:19.872   MAIN   INF   Streaming overview
+2019-11-27 18:47:19.881   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:47:19.881   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:47:29.882   MAIN   INF   Streaming overview
+2019-11-27 18:47:29.888   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:47:29.888   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:47:35.056   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:47:35.061   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:47:39.888   MAIN   INF   Streaming overview
+2019-11-27 18:47:39.900   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:47:39.900   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:47:49.900   MAIN   INF   Streaming overview
+2019-11-27 18:47:49.910   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:47:49.910   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:47:55.808   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:47:55.818   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:47:59.915   MAIN   INF   Streaming overview
+2019-11-27 18:47:59.924   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:47:59.924   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:48:09.370   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:48:09.377   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:48:09.925   MAIN   INF   Streaming overview
+2019-11-27 18:48:09.935   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:48:09.935   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:48:19.938   MAIN   INF   Streaming overview
+2019-11-27 18:48:19.945   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:48:19.946   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:48:29.951   MAIN   INF   Streaming overview
+2019-11-27 18:48:29.961   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:48:29.961   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:53:46.332   MAIN   INF   Server running
+2019-11-27 18:53:46.333   MAIN   INF   Streaming overview
+2019-11-27 18:53:46.349   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:53:46.349   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:53:56.350   MAIN   INF   Streaming overview
+2019-11-27 18:53:56.357   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:53:56.357   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:54:06.361   MAIN   INF   Streaming overview
+2019-11-27 18:54:06.367   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:54:06.367   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:54:16.367   MAIN   INF   Streaming overview
+2019-11-27 18:54:16.376   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:54:16.376   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:54:18.438   MAIN   INF   Displaying LCD for Rompa
+2019-11-27 18:54:18.443   MAIN   INF   Adding worklace: JAHODA
+2019-11-27 18:54:26.380   MAIN   INF   Streaming overview
+2019-11-27 18:54:26.387   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:54:26.387   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:54:36.387   MAIN   INF   Streaming overview
+2019-11-27 18:54:36.396   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:54:36.396   MAIN   INF   Production: 100, Downtime: 0, Offline: 0
+2019-11-27 18:54:46.397   MAIN   INF   Streaming overview
+2019-11-27 18:54:46.406   MAIN   INF   Production: 1, Downtime: 0, Offline: 0
+2019-11-27 18:54:46.406   MAIN   INF   Production: 100, Downtime: 0, Offline: 0

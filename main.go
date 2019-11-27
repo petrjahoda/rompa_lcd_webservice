@@ -113,7 +113,7 @@ func StreamWorkplaceData(streamer *sse.Streamer) {
 			case 2:
 				color = "orange"
 			}
-			duration, err := durafmt.ParseString(time.Now().Add(1 * time.Hour).Sub(workplaceState.DTS).String())
+			duration, err := durafmt.ParseStringShort(time.Now().Add(1 * time.Hour).Sub(workplaceState.DTS).String())
 			if err != nil {
 				LogError(workplace.Name, "Problem parsing datetime: "+err.Error())
 			}

@@ -25,10 +25,10 @@
     }, false);
 </script>
 <div id="time" class="text-leader"
-     style="position:absolute;font-size: 30px;font-weight: 300;bottom:20px;left:90px">
+     style="position:absolute;font-size: 2vw;font-weight: 300;bottom:1%;left:4%">
 </div>
 
-<div class="tiles-grid" style="margin-left: 90px;top:90px">
+<div class="tiles-grid" style="margin-left: 4%;margin-top:4%">
     {{range .LcdWorkplaces}}
         <div id="{{.Name}}" data-role="tile" data-size="medium" class="bg-gray tile-medium" data-role-tile="true"
              style="padding-top:2px;text-align: center;font-size: 20px">{{.Name}}<br>{{.User}}<br>{{.InforData}}</div>
@@ -36,22 +36,22 @@
 </div>
 
 <div id="production" class="text-leader"
-     style="color:#60a916;position:absolute;font-size:50px;font-weight: 500;bottom:70px;left:20%;transform: translate(-50%, -50%);">
+     style="color:#60a916;position:absolute;font-size:3vw;font-weight: 500;bottom:5%;left:20%;transform: translate(-50%, -50%);">
 </div>
 <div id="downtime" class="text-leader"
-     style="color:#fa6800;position:absolute;font-size:50px;font-weight: 500;bottom:70px;left:40%;transform: translate(-50%, -50%);">
+     style="color:#fa6800;position:absolute;font-size:3vw;font-weight: 500;bottom:5%;left:40%;transform: translate(-50%, -50%);">
 </div>
 <div id="offline" class="text-leader"
-     style="color:#cd352c;position:absolute;font-size:50px;font-weight: 500;bottom:70px;left:60%;transform: translate(-50%, -50%);">
+     style="color:#cd352c;position:absolute;font-size:3vw;font-weight: 500;bottom:5%;left:60%;transform: translate(-50%, -50%);">
 </div>
 <div id="breakdown" class="text-leader"
-     style="color:dodgerblue;position:absolute;font-size:50px;font-weight: 500;bottom:70px;left:80%;transform: translate(-50%, -50%);">
+     style="color:dodgerblue;position:absolute;font-size:3vw;font-weight: 500;bottom:5%;left:80%;transform: translate(-50%, -50%);">
 </div>
 <div class="text"
-     style="position:absolute;font-weight: 100;bottom:20px;right:90px">
+     style="position:absolute;font-size: 2vw;font-weight: 100;bottom:1%;right:4%">
     {{.Version}}
 </div>
 <div class="text-leader"
-     style="position:absolute;font-weight: 500;bottom:10px;left:50%;transform: translate(-50%, -50%);">
+     style="position:absolute;font-size: 2vw;font-weight: 500;bottom:1%;left:50%;transform: translate(-50%);">
     www.zapsi.eu
 </div>

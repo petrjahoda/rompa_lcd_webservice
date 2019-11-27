@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/goodsign/monday"
+	"github.com/hako/durafmt"
 	"github.com/jinzhu/gorm"
 	"github.com/julienschmidt/httprouter"
 	"github.com/julienschmidt/sse"
@@ -112,7 +113,10 @@ func StreamWorkplaceData(streamer *sse.Streamer) {
 			case 2:
 				color = "orange"
 			}
-			duration := time.Now().Add(1 * time.Hour).Sub(workplaceState.DTS)
+			duration, err := durafmt.ParseString(time.Now().Add(1 * time.Hour).Sub(workplaceState.DTS).String())
+			if err != nil {
+				LogError(workplace.Name, "Problem parsing datetime: "+err.Error())
+			}
 			streamer.SendString("", "workplaces", workplace.Name+";"+workplace.Name+"<br>User<br>InforData <span class=\"badge-bottom\">"+duration.String()+"</span>;"+color)
 		}
 		time.Sleep(10 * time.Second)

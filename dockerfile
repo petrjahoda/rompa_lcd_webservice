@@ -6,4 +6,7 @@ RUN apk add cifs-utils
 RUN rm -rf /var/cache/apk/*
 WORKDIR /bin
 COPY /linux /bin
+COPY /css /bin/css
+COPY /html /bin/html
+COPY /js /bin/js
 ENTRYPOINT rompa_lcd_webservice_linux

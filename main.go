@@ -77,11 +77,13 @@ func StreamOverview(streamer *sse.Streamer) {
 			time.Sleep(10 * time.Second)
 			continue
 		}
-		productionPercent := production / sum
-		downtimePercent := downtime / sum
-		offlinePercent := sum - productionPercent - downtimePercent
+		LogInfo("MAIN", "Production: "+strconv.Itoa(production)+", Downtime: "+strconv.Itoa(downtime)+", Offline: "+strconv.Itoa(offline))
+		productionPercent := production * 100 / sum
+		downtimePercent := downtime * 100 / sum
+		offlinePercent := 100 - productionPercent - downtimePercent
 		breakdownPercent := 0
-		streamer.SendString("", "overview", "Produkce "+strconv.Itoa(productionPercent*100)+"%;Prostoj "+strconv.Itoa(downtimePercent*100)+"%;Vypnuto "+strconv.Itoa(offlinePercent*100)+"%;Porucha "+strconv.Itoa(breakdownPercent*100)+"%")
+		LogInfo("MAIN", "Production: "+strconv.Itoa(productionPercent)+", Downtime: "+strconv.Itoa(downtimePercent)+", Offline: "+strconv.Itoa(offlinePercent))
+		streamer.SendString("", "overview", "Produkce "+strconv.Itoa(productionPercent)+"%;Prostoj "+strconv.Itoa(downtimePercent)+"%;Vypnuto "+strconv.Itoa(offlinePercent)+"%;Porucha "+strconv.Itoa(breakdownPercent*100)+"%")
 		time.Sleep(10 * time.Second)
 	}
 }
@@ -110,7 +112,7 @@ func StreamWorkplaceData(streamer *sse.Streamer) {
 			case 2:
 				color = "orange"
 			}
-			duration := time.Now().Sub(workplaceState.DTS)
+			duration := time.Now().Add(1 * time.Hour).Sub(workplaceState.DTS)
 			streamer.SendString("", "workplaces", workplace.Name+";"+workplace.Name+"<br>User<br>InforData <span class=\"badge-bottom\">"+duration.String()+"</span>;"+color)
 		}
 		time.Sleep(10 * time.Second)

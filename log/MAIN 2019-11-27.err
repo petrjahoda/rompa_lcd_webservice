@@ -1,0 +1,2 @@
+2019-11-27 14:27:21.328   MAIN   ERR   Problem opening zapsi2 database: dial tcp: lookup zapsidatabase: no such host
+2019-11-27 14:27:23.155   MAIN   ERR   Problem opening zapsi2 database: dial tcp: lookup zapsidatabase: no such host

@@ -1,0 +1,8 @@
+{
+  "DatabaseType": "mysql",
+  "IpAddress": "localhost",
+  "DatabaseName": "zapsi2",
+  "Port": "3306",
+  "Login": "zapsi_uzivatel",
+  "Password": "zapsi"
+}

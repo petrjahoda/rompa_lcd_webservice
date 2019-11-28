@@ -9,6 +9,7 @@ import (
 	"html/template"
 	"net/http"
 	"strconv"
+	"strings"
 	"time"
 )
 
@@ -21,6 +22,7 @@ const version = "2019.4.2.28"
 const deleteLogsAfter = 240 * time.Hour
 
 func main() {
+	// TODO: better logging
 	LogDirectoryFileCheck("MAIN")
 	CreateConfigIfNotExists()
 	LoadSettingsFromConfigFile()
@@ -120,15 +122,35 @@ func StreamWorkplaceData(streamer *sse.Streamer) {
 			case 2:
 				color = "orange"
 			}
-
+			tools, products := GetInforData(order)
 			duration, err := durationfmt.Format(time.Now().Add(1*time.Hour).Sub(workplaceState.DTS), "%dd %hh %mm")
 			if err != nil {
 				LogError(workplace.Name, "Problem parsing datetime: "+err.Error())
 			}
-			streamer.SendString("", "workplaces", workplace.Name+";"+workplace.Name+"<br>"+user.Name+"<br>InforData <span class=\"badge-bottom\">"+duration+"</span>;"+color)
+			streamer.SendString("", "workplaces", workplace.Name+";"+workplace.Name+"<br>"+user.Name+"<br>"+tools+"<br>"+products+"<span class=\"badge-bottom\">"+duration+"</span>;"+color)
 		}
 		time.Sleep(10 * time.Second)
 	}
+}
+
+func GetInforData(order Order) (string, string) {
+	db, err := gorm.Open("mssql", "sqlserver://DataReader:RompaCZ@10.60.1.5/ERPLN105?database=rompaln")
+	if err != nil {
+		println("Error opening db: " + err.Error())
+		return "", ""
+	} else {
+		println("Database open")
+	}
+	defer db.Close()
+	var tools string
+	var items string
+	command := "select	stuff((select ', '+ltrim((t_tool)) from ttirpt2401000 T where T.t_item=PS.t_mitm and T.t_prmd=(PS.t_prmd) and T.t_prmv=(PS.t_pmrv) FOR XML path('')),1,1,'') Tools,		stuff((select ', '+ltrim((t_pitm)) from ttirpt2301000 Pr where Pr.t_prmd=(PS.t_prmd) and Pr.t_prmv=(PS.t_pmrv) FOR XML path('')),1,1,'') Items from ttirpt4011000 PS		where PS.t_prsh='" + order.Barcode + "'"
+	row := db.Raw(command).Row()
+	err = row.Scan(&tools, &items)
+	if err != nil {
+		println(err.Error())
+	}
+	return strings.Replace(tools, " ", "", 1), strings.Replace(items, " ", "", 1)
 }
 
 func StreamTime(streamer *sse.Streamer) {

@@ -34,11 +34,11 @@ func LcdRompa(writer http.ResponseWriter, r *http.Request, params httprouter.Par
 		return
 	}
 	defer db.Close()
-	db.Where("WorkplaceDivisionID = ?", 1).Find(&workplaces)
+	db.Where("WorkplaceDivisionID = ?", 1).Order("Name asc").Find(&workplaces)
 
 	for _, workplace := range workplaces {
-		LogInfo("MAIN", "Adding worklace: " + workplace.Name)
-		lcdWorkplace := LcdWorkplace{Name: workplace.Name, User: "loading", StateColor: "", Duration: time.Duration(0 * time.Hour), InforData: "loading..."}
+		LogInfo("MAIN", "Adding worklace: "+workplace.Name)
+		lcdWorkplace := LcdWorkplace{Name: workplace.Name, User: "loading...", StateColor: "", Duration: time.Duration(0 * time.Hour), InforData: "loading..."}
 		lcdWorkplaces.LcdWorkplaces = append(lcdWorkplaces.LcdWorkplaces, lcdWorkplace)
 	}
 	lcdWorkplaces.Version = "version: " + version

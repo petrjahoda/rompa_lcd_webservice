@@ -43,16 +43,28 @@ func (TerminalInputOrder) TableName() string {
 type User struct {
 	OID   int    `gorm:"column:OID"`
 	Login string `gorm:"column:Login"`
+	Name  string `gorm:"column:Name"`
 }
 
 func (User) TableName() string {
 	return "user"
 }
 
+type Order struct {
+	OID     int    `gorm:"column:OID"`
+	Name    string `gorm:"column:Name"`
+	Barcode string `gorm:"column:Barcode"`
+}
+
+func (Order) TableName() string {
+	return "order"
+}
+
 type Workplace struct {
 	OID                 int    `gorm:"column:OID"`
 	Name                string `gorm:"column:Name"`
 	WorkplaceDivisionId int    `gorm:"column:WorkplaceDivisionID"`
+	DeviceID            int    `gorm:"column:DeviceID"`
 }
 
 func (Workplace) TableName() string {

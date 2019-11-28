@@ -1,8 +1,8 @@
 package main
 
 import (
+	"github.com/davidscholberg/go-durationfmt"
 	"github.com/goodsign/monday"
-	"github.com/hako/durafmt"
 	"github.com/jinzhu/gorm"
 	"github.com/julienschmidt/httprouter"
 	"github.com/julienschmidt/sse"
@@ -17,7 +17,7 @@ type Page struct {
 	Body  []byte
 }
 
-const version = "2019.4.2.27"
+const version = "2019.4.2.28"
 const deleteLogsAfter = 240 * time.Hour
 
 func main() {
@@ -104,20 +104,28 @@ func StreamWorkplaceData(streamer *sse.Streamer) {
 		db.Where("WorkplaceDivisionID = ?", 1).Find(&workplaces)
 
 		for _, workplace := range workplaces {
-			color := "red"
+
+			terminalInputOrder := TerminalInputOrder{}
+			db.Where("DeviceID = ?", workplace.DeviceID).Where("DTE is null").Find(&terminalInputOrder)
+			user := User{}
+			db.Where("OID = ?", terminalInputOrder.UserID).Find(&user)
+			order := Order{}
+			db.Where("OID = ?", terminalInputOrder.OrderID).Find(&order)
 			workplaceState := WorkplaceState{}
 			db.Where("WorkplaceID = ?", workplace.OID).Where("DTE is null").Find(&workplaceState)
+			color := "red"
 			switch workplaceState.StateID {
 			case 1:
 				color = "green"
 			case 2:
 				color = "orange"
 			}
-			duration, err := durafmt.ParseStringShort(time.Now().Add(1 * time.Hour).Sub(workplaceState.DTS).String())
+
+			duration, err := durationfmt.Format(time.Now().Add(1*time.Hour).Sub(workplaceState.DTS), "%dd %hh %mm")
 			if err != nil {
 				LogError(workplace.Name, "Problem parsing datetime: "+err.Error())
 			}
-			streamer.SendString("", "workplaces", workplace.Name+";"+workplace.Name+"<br>User<br>InforData <span class=\"badge-bottom\">"+duration.String()+"</span>;"+color)
+			streamer.SendString("", "workplaces", workplace.Name+";"+workplace.Name+"<br>"+user.Name+"<br>InforData <span class=\"badge-bottom\">"+duration+"</span>;"+color)
 		}
 		time.Sleep(10 * time.Second)
 	}
@@ -125,7 +133,7 @@ func StreamWorkplaceData(streamer *sse.Streamer) {
 
 func StreamTime(streamer *sse.Streamer) {
 	for {
-		streamer.SendString("", "time", monday.Format(time.Now(), "Monday, 2. January 2006 15:04:05", monday.LocaleCsCZ))
+		streamer.SendString("", "time", monday.Format(time.Now().Add(1*time.Hour), "Monday, 2. January 2006 15:04:05", monday.LocaleCsCZ))
 		time.Sleep(1 * time.Second)
 	}
 }

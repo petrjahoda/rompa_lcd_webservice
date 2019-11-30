@@ -15,7 +15,8 @@ import (
 
 type Page struct {
 	Title string
-	Body  []byte
+
+	Body []byte
 }
 
 const version = "2019.4.2.28"
@@ -30,7 +31,7 @@ func main() {
 	timeStreamer := sse.New()
 	workplaces := sse.New()
 	overview := sse.New()
-
+	//TODO
 	router.GET("/lcd_rompa", LcdRompa)
 	router.GET("/css/darcula.css", darcula)
 	router.GET("/js/metro.min.js", metrojs)

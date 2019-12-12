@@ -117,7 +117,7 @@ func StreamWorkplaces(streamer *sse.Streamer) {
 				color = "orange"
 			}
 			tools, products := GetInforData(order)
-			duration, err := durationfmt.Format(time.Now().Add(1*time.Hour).Sub(workplaceState.DTS), "%dd %hh %mm")
+			duration, err := durationfmt.Format(time.Now().Sub(workplaceState.DTS), "%dd %hh %mm")
 			if err != nil {
 				LogError(workplace.Name, "Problem parsing datetime: "+err.Error())
 			}
@@ -149,7 +149,7 @@ func GetInforData(order Order) (string, string) {
 
 func StreamTime(streamer *sse.Streamer) {
 	for {
-		streamer.SendString("", "time", monday.Format(time.Now().Add(1*time.Hour), "Monday, 2. January 2006 15:04:05", monday.LocaleCsCZ))
+		streamer.SendString("", "time", monday.Format(time.Now(), "Monday, 2. January 2006 15:04:05", monday.LocaleCsCZ))
 		time.Sleep(1 * time.Second)
 	}
 }

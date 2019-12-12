@@ -6,18 +6,11 @@ import (
 	"github.com/jinzhu/gorm"
 	"github.com/julienschmidt/httprouter"
 	"github.com/julienschmidt/sse"
-	"html/template"
 	"net/http"
 	"strconv"
 	"strings"
 	"time"
 )
-
-type Page struct {
-	Title string
-
-	Body []byte
-}
 
 const version = "2019.4.2.28"
 const deleteLogsAfter = 240 * time.Hour
@@ -28,20 +21,20 @@ func main() {
 	CreateConfigIfNotExists()
 	LoadSettingsFromConfigFile()
 	router := httprouter.New()
-	timeStreamer := sse.New()
+	time := sse.New()
 	workplaces := sse.New()
 	overview := sse.New()
-	//TODO
+
 	router.GET("/lcd_rompa", LcdRompa)
 	router.GET("/css/darcula.css", darcula)
 	router.GET("/js/metro.min.js", metrojs)
 	router.GET("/css/metro-all.css", metrocss)
 
-	router.Handler("GET", "/time", timeStreamer)
+	router.Handler("GET", "/time", time)
 	router.Handler("GET", "/workplaces", workplaces)
 	router.Handler("GET", "/overview", overview)
-	go StreamTime(timeStreamer)
-	go StreamWorkplaceData(workplaces)
+	go StreamTime(time)
+	go StreamWorkplaces(workplaces)
 	go StreamOverview(overview)
 	LogInfo("MAIN", "Server running")
 	_ = http.ListenAndServe(":80", router)
@@ -92,7 +85,7 @@ func StreamOverview(streamer *sse.Streamer) {
 	}
 }
 
-func StreamWorkplaceData(streamer *sse.Streamer) {
+func StreamWorkplaces(streamer *sse.Streamer) {
 	var workplaces []Workplace
 	for {
 		workplaces = nil
@@ -171,9 +164,4 @@ func metrojs(writer http.ResponseWriter, request *http.Request, params httproute
 
 func metrocss(writer http.ResponseWriter, request *http.Request, params httprouter.Params) {
 	http.ServeFile(writer, request, "css/metro-all.css")
-}
-
-func renderTemplate(w http.ResponseWriter, tmpl string, p *Page) {
-	t, _ := template.ParseFiles("html/" + tmpl + ".html")
-	_ = t.Execute(w, p)
 }

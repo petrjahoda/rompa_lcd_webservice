@@ -7,26 +7,6 @@ import (
 	"time"
 )
 
-type WorkplacePort struct {
-	OID          int `gorm:"column:OID"`
-	DevicePortId int `gorm:"column:DevicePortID"`
-}
-
-func (WorkplacePort) TableName() string {
-	return "workplace_port"
-}
-
-type DeviceInputAnalog struct {
-	OID          int       `gorm:"column:OID"`
-	DevicePortId int       `gorm:"column:DevicePortID"`
-	DT           time.Time `gorm:"column:DT"`
-	Data         float32   `gorm:"column:Data"`
-}
-
-func (DeviceInputAnalog) TableName() string {
-	return "device_input_analog"
-}
-
 type TerminalInputOrder struct {
 	OID      int       `gorm:"column:OID"`
 	DTS      time.Time `gorm:"column:DTS"`

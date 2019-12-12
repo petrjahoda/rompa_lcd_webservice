@@ -7,5 +7,12 @@
       <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mariadb://localhost:3306/zapsi2</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="@192.168.3.22" uuid="3b0120a9-2850-4e10-9dd7-657f59af69aa">
+      <driver-ref>oracle</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@192.168.3.22:61080:XE</jdbc-url>
+    </data-source>
   </component>
 </project>

@@ -1,0 +1,24 @@
+# new image
+ADD file:fe64057fbb83dccb960efabbf1cd8777920ef279a7fa8dbca0a8801c651bdf7c in /
+CMD ["/bin/sh"]
+# end of image: alpine:latest (id: sha256:961769676411f082461f9ef46626dd7a2d1e2b2a38e6a44364bcbecf51e66dd4 tags: alpine:latest)
+
+# new image
+RUN apk update && \
+	apk upgrade && \
+	apk add bash && \
+	apk add procps && \
+	apk add nano
+RUN apk add samba-client
+RUN apk add samba-common
+RUN apk add cifs-utils
+RUN apk add tzdata
+RUN rm -rf /var/cache/apk/*
+RUN cp /usr/share/zoneinfo/Europe/Prague /etc/localtime
+WORKDIR /bin
+COPY dir:92f24c1cd79149a6f3fabe3d4b0014598ff9b1dc6dead1131397f6440f535033 in /bin
+COPY dir:a491dfcb7d8582349e9563e21c42f6fdd5e77724b9736db70981b13ca4c2e233 in /bin/css
+COPY dir:fe992118186c3a73ac775f82ff8a614770345ab0960017f516a3fc688a88a7b4 in /bin/html
+COPY dir:6cef0d5c5e93f5f0d1c0b9bc37a699ee7282c63fa49719f4a244a71637671038 in /bin/js
+ENTRYPOINT ["/bin/sh" "-c" "rompa_lcd_webservice_linux"]
+# end of image: petrjahoda/rompa_lcd_webservice:latest (id: sha256:79b5f67c6cb3fe93fb2888c57356d9a15c3cdb0111db631a9377ca0be617b07d tags: petrjahoda/rompa_lcd_webservice:latest)

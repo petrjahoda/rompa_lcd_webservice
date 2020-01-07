@@ -1,0 +1,2427 @@
+{
+  "system": {
+    "type": "Linux",
+    "release": "4.9.184-linuxkit",
+    "os": "Alpine Linux 3.10.2"
+  },
+  "monitors": {
+    "fan": {
+      "monitor_pid": 1,
+      "monitor_ppid": 0,
+      "event_count": 30,
+      "main_process": {
+        "pid": 16,
+        "name": "sh",
+        "path": "/bin/busybox",
+        "cmd": "/bin/sh -c rompa_lcd_webservice_linux",
+        "cwd": "/bin",
+        "root": "/",
+        "ppid": 1
+      },
+      "processes": {
+        "16": {
+          "pid": 16,
+          "name": "sh",
+          "path": "/bin/busybox",
+          "cmd": "/bin/sh -c rompa_lcd_webservice_linux",
+          "cwd": "/bin",
+          "root": "/",
+          "ppid": 1
+        }
+      },
+      "process_files": {
+        "16": {
+          "/bin/busybox": {
+            "event_count": 2,
+            "first_eid": 1,
+            "reads": 2,
+            "execs": 2
+          },
+          "/bin/config/config.json": {
+            "event_count": 4,
+            "first_eid": 14,
+            "reads": 1,
+            "writes": 1
+          },
+          "/bin/log/MAIN 2019-12-13.err": {
+            "event_count": 3,
+            "first_eid": 26,
+            "writes": 2
+          },
+          "/bin/log/MAIN 2019-12-13.log": {
+            "event_count": 14,
+            "first_eid": 10,
+            "writes": 8
+          },
+          "/bin/rompa_lcd_webservice_linux": {
+            "event_count": 4,
+            "first_eid": 4,
+            "reads": 2
+          },
+          "/etc/localtime": {
+            "event_count": 2,
+            "first_eid": 8,
+            "reads": 1
+          },
+          "/lib/ld-musl-x86_64.so.1": {
+            "event_count": 1,
+            "first_eid": 3,
+            "reads": 1
+          }
+        }
+      }
+    },
+    "pt": {
+      "arch_name": "amd64",
+      "syscall_count": 352,
+      "syscall_num": 38,
+      "syscall_stats": {
+        "0": {
+          "num": 0,
+          "name": "read",
+          "count": 4
+        },
+        "1": {
+          "num": 1,
+          "name": "write",
+          "count": 12
+        },
+        "10": {
+          "num": 10,
+          "name": "mprotect",
+          "count": 6
+        },
+        "102": {
+          "num": 102,
+          "name": "getuid",
+          "count": 1
+        },
+        "11": {
+          "num": 11,
+          "name": "munmap",
+          "count": 1
+        },
+        "110": {
+          "num": 110,
+          "name": "getppid",
+          "count": 1
+        },
+        "12": {
+          "num": 12,
+          "name": "brk",
+          "count": 2
+        },
+        "13": {
+          "num": 13,
+          "name": "rt_sigaction",
+          "count": 121
+        },
+        "131": {
+          "num": 131,
+          "name": "sigaltstack",
+          "count": 2
+        },
+        "14": {
+          "num": 14,
+          "name": "rt_sigprocmask",
+          "count": 9
+        },
+        "158": {
+          "num": 158,
+          "name": "arch_prctl",
+          "count": 2
+        },
+        "186": {
+          "num": 186,
+          "name": "gettid",
+          "count": 1
+        },
+        "2": {
+          "num": 2,
+          "name": "open",
+          "count": 1
+        },
+        "202": {
+          "num": 202,
+          "name": "futex",
+          "count": 20
+        },
+        "204": {
+          "num": 204,
+          "name": "sched_getaffinity",
+          "count": 1
+        },
+        "218": {
+          "num": 218,
+          "name": "set_tid_address",
+          "count": 1
+        },
+        "228": {
+          "num": 228,
+          "name": "clock_gettime",
+          "count": 72
+        },
+        "233": {
+          "num": 233,
+          "name": "epoll_ctl",
+          "count": 15
+        },
+        "24": {
+          "num": 24,
+          "name": "sched_yield",
+          "count": 1
+        },
+        "257": {
+          "num": 257,
+          "name": "openat",
+          "count": 10
+        },
+        "258": {
+          "num": 258,
+          "name": "mkdirat",
+          "count": 2
+        },
+        "262": {
+          "num": 262,
+          "name": "newfstatat",
+          "count": 4
+        },
+        "267": {
+          "num": 267,
+          "name": "readlinkat",
+          "count": 1
+        },
+        "281": {
+          "num": 281,
+          "name": "epoll_pwait",
+          "count": 2
+        },
+        "291": {
+          "num": 291,
+          "name": "epoll_create1",
+          "count": 1
+        },
+        "3": {
+          "num": 3,
+          "name": "close",
+          "count": 12
+        },
+        "39": {
+          "num": 39,
+          "name": "getpid",
+          "count": 1
+        },
+        "4": {
+          "num": 4,
+          "name": "stat",
+          "count": 6
+        },
+        "41": {
+          "num": 41,
+          "name": "socket",
+          "count": 4
+        },
+        "49": {
+          "num": 49,
+          "name": "bind",
+          "count": 2
+        },
+        "5": {
+          "num": 5,
+          "name": "fstat",
+          "count": 1
+        },
+        "54": {
+          "num": 54,
+          "name": "setsockopt",
+          "count": 4
+        },
+        "56": {
+          "num": 56,
+          "name": "clone",
+          "count": 3
+        },
+        "59": {
+          "num": 59,
+          "name": "execve",
+          "count": 2
+        },
+        "72": {
+          "num": 72,
+          "name": "fcntl",
+          "count": 5
+        },
+        "79": {
+          "num": 79,
+          "name": "getcwd",
+          "count": 1
+        },
+        "89": {
+          "num": 89,
+          "name": "readlink",
+          "count": 1
+        },
+        "9": {
+          "num": 9,
+          "name": "mmap",
+          "count": 17
+        }
+      }
+    }
+  },
+  "image": {
+    "files": [
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/arch",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/ash",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/base64",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/bbconfig",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "File",
+        "file_path": "/bin/busybox",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true,
+          "X": true
+        },
+        "file_size": 833104,
+        "sha1_hash": "0d0dca55b231673299cdf0a68b773f5fc7ac1d14"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/cat",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/chgrp",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/chmod",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/chown",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "File",
+        "file_path": "/bin/config/config.json",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true,
+          "W": true
+        },
+        "file_size": 159,
+        "sha1_hash": "60389a76e6d554efee86a5de9031c635b21c6d00"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/conspy",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/cp",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/date",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/dd",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/df",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/dmesg",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/dnsdomainname",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/dumpkmap",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/echo",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/ed",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/egrep",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/false",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/fatattr",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/fdflush",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/fgrep",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/fsync",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/getopt",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/grep",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/gunzip",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/gzip",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/hostname",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/ionice",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/iostat",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/ipcalc",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/kbd_mode",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/kill",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/link",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/linux32",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/linux64",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/ln",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "File",
+        "file_path": "/bin/log/MAIN 2019-12-13.err",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "W": true
+        },
+        "file_size": 274,
+        "sha1_hash": "17bb14369de5dc6c8932de99da02e93ab5a3f064"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/bin/log/MAIN 2019-12-13.log",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "W": true
+        },
+        "file_size": 673,
+        "sha1_hash": "b9c3da23fc45b43d5bef13654506445a5c35f1ff"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/login",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/ls",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/lzop",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/makemime",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/mkdir",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/mknod",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/mktemp",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/more",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/mount",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/mountpoint",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/mpstat",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/mv",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/netstat",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/nice",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/ping",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/ping6",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/pipe_progress",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/printenv",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/pwd",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/reformime",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/rev",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/rm",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/rmdir",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "File",
+        "file_path": "/bin/rompa_lcd_webservice_linux",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true
+        },
+        "file_size": 4075352,
+        "sha1_hash": "a4556aa5427722d4786dff7398e0983e95a8611b"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/run-parts",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/sed",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/setpriv",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/setserial",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/sh",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/sleep",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/stat",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/stty",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/su",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/sync",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/tar",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/touch",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/true",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/umount",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/uname",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/usleep",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/zcat",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "File",
+        "file_path": "/etc/localtime",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 2301,
+        "sha1_hash": "c95c20c6a17e873cb68c1b064e6ba98852aaa27d"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/lib/ld-musl-x86_64.so.1",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true
+        },
+        "file_size": 580144,
+        "sha1_hash": "4d32ed528a4f7a217d26b0347202906588201be7"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib/libc.musl-x86_64.so.1",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "ld-musl-x86_64.so.1",
+        "file_size": 19
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/acpid",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/adjtimex",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/arp",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/blkid",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/blockdev",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/depmod",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/fbsplash",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/fdisk",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/findfs",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/fsck",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/fstrim",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/getty",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/halt",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/hdparm",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/hwclock",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/ifconfig",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/ifdown",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/ifenslave",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/ifup",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/init",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/inotifyd",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/insmod",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/ip",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/ipaddr",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/iplink",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/ipneigh",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/iproute",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/iprule",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/iptunnel",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/klogd",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/loadkmap",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/logread",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/losetup",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/lsmod",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/mdev",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/mkdosfs",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/mkfs.vfat",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/mkswap",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/modinfo",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/modprobe",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/nameif",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/nologin",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/poweroff",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/raidautorun",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/reboot",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/rmmod",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/route",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/setconsole",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/slattach",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/swapoff",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/swapon",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/switch_root",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/syslogd",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/tunctl",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/udhcpc",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/vconfig",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/sbin/watchdog",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/[",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/[[",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/awk",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/basename",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/bc",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/beep",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/blkdiscard",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/bunzip2",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/bzcat",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/bzip2",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/cal",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/chvt",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/cksum",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/clear",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/cmp",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/comm",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/cpio",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/crontab",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/cryptpw",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/cut",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/dc",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/deallocvt",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/diff",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/dirname",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/dos2unix",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/du",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/dumpleases",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/eject",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/env",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/expand",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/expr",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/factor",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/fallocate",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/find",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/flock",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/fold",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/fuser",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/groups",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/hd",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/head",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/hexdump",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/hostid",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/id",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/install",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/ipcrm",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/ipcs",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/killall",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/less",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/logger",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/lsof",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/lsusb",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/lzcat",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/lzma",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/lzopcat",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/md5sum",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/mesg",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/microcom",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/mkfifo",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/mkpasswd",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/nc",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/nl",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/nmeter",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/nohup",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/nproc",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/nsenter",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/nslookup",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/od",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/openvt",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/passwd",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/paste",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/patch",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/printf",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/pscan",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/pstree",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/readlink",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/realpath",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/renice",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/reset",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/resize",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/seq",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/setkeycodes",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/setsid",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/sha1sum",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/sha256sum",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/sha3sum",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/sha512sum",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/showkey",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/shred",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/shuf",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/smemcap",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/sort",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/split",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/strings",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/sum",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/tac",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/tail",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/tee",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/test",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/time",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/timeout",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/tr",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/traceroute",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/traceroute6",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/truncate",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/tty",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/ttysize",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/udhcpc6",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/unexpand",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/uniq",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/unix2dos",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/unlink",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/unlzma",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/unlzop",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/unshare",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/unxz",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/unzip",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/uudecode",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/uuencode",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/vi",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/vlock",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/volname",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/wc",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/wget",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/which",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/whoami",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/whois",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/xargs",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/xxd",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/xzcat",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/bin/yes",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/add-shell",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/addgroup",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/adduser",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/arping",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/brctl",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/chpasswd",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/chroot",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/crond",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/delgroup",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/deluser",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/ether-wake",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/fbset",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/fdformat",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/killall5",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/loadfont",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/lspci",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/nanddump",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/nandwrite",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/nbd-client",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/ntpd",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/partprobe",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/powertop",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/rdate",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/rdev",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/readahead",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/readprofile",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/remove-shell",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/rfkill",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/sendmail",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/setfont",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/sbin/setlogcons",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/bin/busybox",
+        "file_size": 12
+      }
+    ]
+  }
+}

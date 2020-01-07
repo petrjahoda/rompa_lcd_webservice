@@ -12,7 +12,7 @@ import (
 	"time"
 )
 
-const version = "2019.4.2.28"
+const version = "2019.4.3.13"
 const deleteLogsAfter = 240 * time.Hour
 
 func main() {

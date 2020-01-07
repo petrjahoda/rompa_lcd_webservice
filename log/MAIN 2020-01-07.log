@@ -1,0 +1,73 @@
+2020-01-07 06:51:37.269   MAIN   INF   Server running
+2020-01-07 06:51:37.269   MAIN   INF   Streaming overview
+2020-01-07 06:51:37.277   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 06:51:37.277   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 06:51:47.759   MAIN   INF   Displaying LCD for Rompa
+2020-01-07 06:51:47.760   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:05:48.439   MAIN   INF   Server running
+2020-01-07 09:05:48.440   MAIN   INF   Streaming overview
+2020-01-07 09:05:48.450   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:05:48.450   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:06:02.897   MAIN   INF   Displaying LCD for Rompa
+2020-01-07 09:06:02.898   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:06:59.687   MAIN   INF   Server running
+2020-01-07 09:06:59.687   MAIN   INF   Streaming overview
+2020-01-07 09:06:59.690   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:06:59.690   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:08:07.146   MAIN   INF   Displaying LCD for Rompa
+2020-01-07 09:08:07.147   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:08:47.381   MAIN   INF   Server running
+2020-01-07 09:08:47.381   MAIN   INF   Streaming overview
+2020-01-07 09:08:47.384   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:08:47.384   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:08:47.709   MAIN   INF   Displaying LCD for Rompa
+2020-01-07 09:08:47.710   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:08:54.312   MAIN   INF   Displaying LCD for Rompa
+2020-01-07 09:08:54.313   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:09:22.056   MAIN   INF   Server running
+2020-01-07 09:09:22.057   MAIN   INF   Streaming overview
+2020-01-07 09:09:22.059   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:09:22.060   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:09:23.924   MAIN   INF   Displaying LCD for Rompa
+2020-01-07 09:09:23.925   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:10:44.274   MAIN   INF   Server running
+2020-01-07 09:10:44.274   MAIN   INF   Streaming overview
+2020-01-07 09:10:44.278   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:10:44.278   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:10:45.611   MAIN   INF   Displaying LCD for Rompa
+2020-01-07 09:10:45.612   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:10:59.831   MAIN   INF   Server running
+2020-01-07 09:10:59.831   MAIN   INF   Streaming overview
+2020-01-07 09:10:59.833   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:10:59.834   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:11:01.273   MAIN   INF   Displaying LCD for Rompa
+2020-01-07 09:11:01.274   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:11:09.192   MAIN   INF   Displaying LCD for Rompa
+2020-01-07 09:11:09.193   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:11:18.683   MAIN   INF   Server running
+2020-01-07 09:11:18.684   MAIN   INF   Streaming overview
+2020-01-07 09:11:18.686   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:11:18.686   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:11:20.581   MAIN   INF   Displaying LCD for Rompa
+2020-01-07 09:11:20.582   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:12:02.816   MAIN   INF   Displaying LCD for Rompa
+2020-01-07 09:12:02.817   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:12:41.049   MAIN   INF   Server running
+2020-01-07 09:12:41.049   MAIN   INF   Streaming overview
+2020-01-07 09:12:41.052   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:12:41.052   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:12:43.991   MAIN   INF   Displaying LCD for Rompa
+2020-01-07 09:13:06.876   MAIN   INF   Server running
+2020-01-07 09:13:06.877   MAIN   INF   Streaming overview
+2020-01-07 09:13:06.880   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:13:06.880   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:13:08.831   MAIN   INF   Displaying LCD for Rompa
+2020-01-07 09:13:08.832   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:13:10.747   MAIN   INF   Displaying LCD for Rompa
+2020-01-07 09:13:10.748   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:13:29.884   MAIN   INF   Server running
+2020-01-07 09:13:29.884   MAIN   INF   Streaming overview
+2020-01-07 09:13:29.887   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:13:29.887   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused
+2020-01-07 09:13:31.681   MAIN   INF   Displaying LCD for Rompa
+2020-01-07 09:13:31.682   MAIN   ERR   Problem opening zapsi2 database: dial tcp [::1]:3306: connect: connection refused

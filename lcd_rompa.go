@@ -31,7 +31,6 @@ func LcdRompa(writer http.ResponseWriter, r *http.Request, params httprouter.Par
 
 	if err != nil {
 		LogError("MAIN", "Problem opening "+DatabaseName+" database: "+err.Error())
-		return
 	}
 	defer db.Close()
 	db.Where("WorkplaceDivisionID = ?", 1).Order("Name asc").Find(&workplaces)

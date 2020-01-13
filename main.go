@@ -12,11 +12,10 @@ import (
 	"time"
 )
 
-const version = "2019.4.3.13"
+const version = "2020.1.1.13"
 const deleteLogsAfter = 240 * time.Hour
 
 func main() {
-	// TODO: better logging
 	LogDirectoryFileCheck("MAIN")
 	CreateConfigIfNotExists()
 	LoadSettingsFromConfigFile()
@@ -50,7 +49,7 @@ func StreamOverview(streamer *sse.Streamer) {
 		defer db.Close()
 		if err != nil {
 			LogError("MAIN", "Problem opening "+DatabaseName+" database: "+err.Error())
-			return
+			continue
 		}
 		db.Where("WorkplaceDivisionID = ?", 1).Find(&workplaces)
 		production := 0
@@ -94,7 +93,7 @@ func StreamWorkplaces(streamer *sse.Streamer) {
 
 		if err != nil {
 			LogError("MAIN", "Problem opening "+DatabaseName+" database: "+err.Error())
-			return
+			continue
 		}
 		defer db.Close()
 		db.Where("WorkplaceDivisionID = ?", 1).Find(&workplaces)

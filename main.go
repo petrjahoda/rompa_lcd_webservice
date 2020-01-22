@@ -12,7 +12,7 @@ import (
 	"time"
 )
 
-const version = "2020.1.1.13"
+const version = "2020.1.1.22"
 const deleteLogsAfter = 240 * time.Hour
 
 func main() {
@@ -91,11 +91,11 @@ func StreamWorkplaces(streamer *sse.Streamer) {
 		connectionString, dialect := CheckDatabaseType()
 		db, err := gorm.Open(dialect, connectionString)
 
+		defer db.Close()
 		if err != nil {
 			LogError("MAIN", "Problem opening "+DatabaseName+" database: "+err.Error())
 			continue
 		}
-		defer db.Close()
 		db.Where("WorkplaceDivisionID = ?", 1).Find(&workplaces)
 
 		for _, workplace := range workplaces {
@@ -137,7 +137,7 @@ func GetInforData(order Order) (string, string) {
 	defer db.Close()
 	var tools string
 	var items string
-	command := "select	stuff((select ', '+ltrim((t_tool)) from ttirpt2401000 T where T.t_item=PS.t_mitm and T.t_prmd=(PS.t_prmd) and T.t_prmv=(PS.t_pmrv) FOR XML path('')),1,1,'') Tools,		stuff((select ', '+ltrim((t_pitm)) from ttirpt2301000 Pr where Pr.t_prmd=(PS.t_prmd) and Pr.t_prmv=(PS.t_pmrv) FOR XML path('')),1,1,'') Items from ttirpt4011000 PS		where PS.t_prsh='" + order.Barcode + "'"
+	command := "select	stuff((select ', '+ltrim((t_tool)) from ttirpt2401000 T where T.t_item=PS.t_mitm and T.t_prmd=(PS.t_prmd) and T.t_prmv=(PS.t_pmrv) FOR XML path('')),1,1,'') Tools,		stuff((select ', '+ltrim((t_pitm)) from ttirpt2301000 Pr where Pr.t_prmd=(PS.t_prmd) and Pr.t_prmv=(PS.t_pmrv) FOR XML path('')),1,1,'') Items from ttirpt4011000 PS		where PS.t_prsh='" + order.Name + "'"
 	row := db.Raw(command).Row()
 	err = row.Scan(&tools, &items)
 	if err != nil {

@@ -25,6 +25,7 @@ func main() {
 	overview := sse.New()
 
 	router.GET("/lcd_rompa", LcdRompa)
+	router.GET("/mobile_rompa", MobileRompa)
 	router.GET("/css/darcula.css", darcula)
 	router.GET("/js/metro.min.js", metrojs)
 	router.GET("/css/metro-all.css", metrocss)
@@ -36,7 +37,7 @@ func main() {
 	go StreamWorkplaces(workplaces)
 	go StreamOverview(overview)
 	LogInfo("MAIN", "Server running")
-	_ = http.ListenAndServe(":90", router)
+	_ = http.ListenAndServe(":80", router)
 }
 
 func StreamOverview(streamer *sse.Streamer) {

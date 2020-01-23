@@ -21,6 +21,20 @@ func (TerminalInputOrder) TableName() string {
 	return "terminal_input_order"
 }
 
+type TerminalInputIdle struct {
+	OID      int       `gorm:"column:OID"`
+	DTS      time.Time `gorm:"column:DTS"`
+	DTE      time.Time `gorm:"column:DTE; default:null"`
+	IdleID   int       `gorm:"column:IdleID"`
+	UserID   int       `gorm:"column:UserID"`
+	Interval float32   `gorm:"column:Interval"`
+	DeviceID int       `gorm:"column:DeviceID"`
+}
+
+func (TerminalInputIdle) TableName() string {
+	return "terminal_input_idle"
+}
+
 type User struct {
 	OID   int    `gorm:"column:OID"`
 	Login string `gorm:"column:Login"`

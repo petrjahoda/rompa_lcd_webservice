@@ -12,7 +12,7 @@ import (
 	"time"
 )
 
-const version = "2020.1.1.22"
+const version = "2020.1.1.23"
 const deleteLogsAfter = 240 * time.Hour
 
 func main() {
@@ -55,6 +55,7 @@ func StreamOverview(streamer *sse.Streamer) {
 		production := 0
 		downtime := 0
 		offline := 0
+		repair := 0
 		for _, workplace := range workplaces {
 			workplaceState := WorkplaceState{}
 			db.Where("WorkplaceID = ?", workplace.OID).Where("DTE is null").Find(&workplaceState)
@@ -66,8 +67,14 @@ func StreamOverview(streamer *sse.Streamer) {
 			case 3:
 				offline++
 			}
+			terminalInputIdle := TerminalInputIdle{}
+			db.Where("DeviceID = ?", workplace.DeviceID).Where("DTE is null").Where("IdleId=136").Find(&terminalInputIdle)
+			if terminalInputIdle.OID > 0 {
+				repair++
+			}
 		}
-		sum := production + offline + downtime
+		downtime = downtime - repair
+		sum := production + offline + downtime + repair
 		if sum == 0 {
 			streamer.SendString("", "overview", "Produkce 0%;Prostoj 0%;Vypnuto 0%;Porucha 0%")
 			time.Sleep(10 * time.Second)
@@ -76,10 +83,10 @@ func StreamOverview(streamer *sse.Streamer) {
 		LogInfo("MAIN", "Production: "+strconv.Itoa(production)+", Downtime: "+strconv.Itoa(downtime)+", Offline: "+strconv.Itoa(offline))
 		productionPercent := production * 100 / sum
 		downtimePercent := downtime * 100 / sum
-		offlinePercent := 100 - productionPercent - downtimePercent
-		breakdownPercent := 0
+		repairPercent := repair * 100 / sum
+		offlinePercent := 100 - productionPercent - downtimePercent - repair
 		LogInfo("MAIN", "Production: "+strconv.Itoa(productionPercent)+", Downtime: "+strconv.Itoa(downtimePercent)+", Offline: "+strconv.Itoa(offlinePercent))
-		streamer.SendString("", "overview", "Produkce "+strconv.Itoa(productionPercent)+"%;Prostoj "+strconv.Itoa(downtimePercent)+"%;Vypnuto "+strconv.Itoa(offlinePercent)+"%;Porucha "+strconv.Itoa(breakdownPercent*100)+"%")
+		streamer.SendString("", "overview", "Produkce "+strconv.Itoa(productionPercent)+"%;Prostoj "+strconv.Itoa(downtimePercent)+"%;Vypnuto "+strconv.Itoa(offlinePercent)+"%;Porucha "+strconv.Itoa(repairPercent*100)+"%")
 		time.Sleep(10 * time.Second)
 	}
 }
@@ -108,11 +115,16 @@ func StreamWorkplaces(streamer *sse.Streamer) {
 			db.Where("OID = ?", terminalInputOrder.OrderID).Find(&order)
 			workplaceState := WorkplaceState{}
 			db.Where("WorkplaceID = ?", workplace.OID).Where("DTE is null").Find(&workplaceState)
-			color := "red"
+			terminalInputIdle := TerminalInputIdle{}
+			db.Where("DeviceID = ?", workplace.DeviceID).Where("DTE is null").Where("IdleId=136").Find(&terminalInputIdle)
+			color := "yellow"
 			switch workplaceState.StateID {
 			case 1:
 				color = "green"
 			case 2:
+				color = "red"
+			}
+			if terminalInputIdle.OID > 0 {
 				color = "orange"
 			}
 			tools, products := GetInforData(order)

@@ -24,9 +24,7 @@
         document.getElementById(overviewData[0]).className = "bg-" + overviewData[2] + " tile-medium"
     }, false);
 </script>
-<div id="time" class="text-leader"
-     style="position:absolute;font-size: 1.5vw;font-weight: 300;bottom:1%;left:1.5%">
-</div>
+
 
 <div class="tiles-grid" style="margin-left: 1.5%;margin-top:1.5%;zoom: 90%">
     {{range .LcdWorkplaces}}
@@ -34,24 +32,35 @@
              style="padding-top:2px;text-align: center;font-size: 16px">{{.Name}}<br>{{.User}}<br>{{.InforData}}</div>
     {{end}}
 </div>
+<br>
+<br>
+<br>
+<br>
+<div>
+    <div style="bottom: 10px">
+        <div id="production" class="text-leader"
+             style="color:green;position:absolute;font-size:2.5vw;font-weight: 500;bottom:3%;left:20%;transform: translate(-50%, -50%);">
+        </div>
+        <div id="downtime" class="text-leader"
+             style="color:red;position:absolute;font-size:2.5vw;font-weight: 500;bottom:3%;left:40%;transform: translate(-50%, -50%);">
+        </div>
+        <div id="offline" class="text-leader"
+             style="color:yellow;position:absolute;font-size:2.5vw;font-weight: 500;bottom:3%;left:60%;transform: translate(-50%, -50%);">
+        </div>
+        <div id="breakdown" class="text-leader"
+             style="color:orange;position:absolute;font-size:2.5vw;font-weight: 500;bottom:3%;left:80%;transform: translate(-50%, -50%);">
+        </div>
+    </div>
+    <div id="time" class="text-leader"
+         style="position:absolute;font-size: 1.5vw;font-weight: 300;bottom:1%;left:1.5%">
+    </div>
+    <div class="text"
+         style="position:absolute;font-size: 1.5vw;font-weight: 300;bottom:2%;right:1%">
+        {{.Version}}
+    </div>
+    <div class="text-leader"
+         style="position:absolute;font-size: 2vw;font-weight: 500;bottom:1%;left:50%;transform: translate(-50%);">
+        www.zapsi.eu
+    </div>
 
-<div id="production" class="text-leader"
-     style="color:green;position:absolute;font-size:2.5vw;font-weight: 500;bottom:2.5%;left:20%;transform: translate(-50%, -50%);">
-</div>
-<div id="downtime" class="text-leader"
-     style="color:red;position:absolute;font-size:2.5vw;font-weight: 500;bottom:2.5%;left:40%;transform: translate(-50%, -50%);">
-</div>
-<div id="offline" class="text-leader"
-     style="color:yellow;position:absolute;font-size:2.5vw;font-weight: 500;bottom:2.5%;left:60%;transform: translate(-50%, -50%);">
-</div>
-<div id="breakdown" class="text-leader"
-     style="color:orange;position:absolute;font-size:2.5vw;font-weight: 500;bottom:2.5%;left:80%;transform: translate(-50%, -50%);">
-</div>
-<div class="text"
-     style="position:absolute;font-size: 1vw;font-weight: 100;bottom:2%;right:1%">
-    {{.Version}}
-</div>
-<div class="text-leader"
-     style="position:absolute;font-size: 1.5vw;font-weight: 500;bottom:1%;left:50%;transform: translate(-50%);">
-    www.zapsi.eu
 </div>

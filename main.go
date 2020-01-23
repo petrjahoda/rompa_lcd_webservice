@@ -36,7 +36,7 @@ func main() {
 	go StreamWorkplaces(workplaces)
 	go StreamOverview(overview)
 	LogInfo("MAIN", "Server running")
-	_ = http.ListenAndServe(":80", router)
+	_ = http.ListenAndServe(":90", router)
 }
 
 func StreamOverview(streamer *sse.Streamer) {
@@ -49,6 +49,7 @@ func StreamOverview(streamer *sse.Streamer) {
 		defer db.Close()
 		if err != nil {
 			LogError("MAIN", "Problem opening "+DatabaseName+" database: "+err.Error())
+			time.Sleep(10 * time.Second)
 			continue
 		}
 		db.Where("WorkplaceDivisionID = ?", 1).Find(&workplaces)
@@ -101,12 +102,11 @@ func StreamWorkplaces(streamer *sse.Streamer) {
 		defer db.Close()
 		if err != nil {
 			LogError("MAIN", "Problem opening "+DatabaseName+" database: "+err.Error())
+			time.Sleep(10 * time.Second)
 			continue
 		}
 		db.Where("WorkplaceDivisionID = ?", 1).Find(&workplaces)
-
 		for _, workplace := range workplaces {
-
 			terminalInputOrder := TerminalInputOrder{}
 			db.Where("DeviceID = ?", workplace.DeviceID).Where("DTE is null").Find(&terminalInputOrder)
 			user := User{}

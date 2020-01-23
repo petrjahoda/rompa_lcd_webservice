@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="../css/metro-all.css">
+<link rel="stylesheet" href="../css/darcula.css">
+<script src="../js/metro.min.js"></script>
+<script type="text/javascript">
+    const time = new EventSource('/time');
+    time.addEventListener('time', () => {
+        document.getElementById("time").innerHTML = event.data;
+
+    }, false);
+    const overview = new EventSource('/overview');
+    overview.addEventListener('overview', () => {
+        const overviewData = event.data.split(";");
+        document.getElementById("production").innerHTML = overviewData[0];
+        document.getElementById("downtime").innerHTML = overviewData[1];
+        document.getElementById("offline").innerHTML = overviewData[2];
+        document.getElementById("breakdown").innerHTML = overviewData[3];
+
+    }, false);
+    const workplaces = new EventSource('/workplaces');
+    workplaces.addEventListener('workplaces', () => {
+        const overviewData = event.data.split(";");
+        document.getElementById(overviewData[0]).innerHTML = overviewData[1];
+        document.getElementById(overviewData[0]).className = "bg-" + overviewData[2] + " tile-medium"
+    }, false);
+</script>
+<div id="time" class="text-leader"
+     style="position:absolute;font-size: 1.5vw;font-weight: 300;bottom:1%;left:1.5%">
+</div>
+
+<div class="tiles-grid" style="margin-left: 1.5%;margin-top:1.5%;zoom: 90%">
+    {{range .LcdWorkplaces}}
+        <div id="{{.Name}}" data-role="tile" data-size="medium" class="bg-gray tile-medium" data-role-tile="true"
+             style="padding-top:2px;text-align: center;font-size: 16px">{{.Name}}<br>{{.User}}<br>{{.InforData}}</div>
+    {{end}}
+</div>
+
+<div id="production" class="text-leader"
+     style="color:green;position:absolute;font-size:2.5vw;font-weight: 500;bottom:2.5%;left:20%;transform: translate(-50%, -50%);">
+</div>
+<div id="downtime" class="text-leader"
+     style="color:red;position:absolute;font-size:2.5vw;font-weight: 500;bottom:2.5%;left:40%;transform: translate(-50%, -50%);">
+</div>
+<div id="offline" class="text-leader"
+     style="color:yellow;position:absolute;font-size:2.5vw;font-weight: 500;bottom:2.5%;left:60%;transform: translate(-50%, -50%);">
+</div>
+<div id="breakdown" class="text-leader"
+     style="color:orange;position:absolute;font-size:2.5vw;font-weight: 500;bottom:2.5%;left:80%;transform: translate(-50%, -50%);">
+</div>
+<div class="text"
+     style="position:absolute;font-size: 1vw;font-weight: 100;bottom:2%;right:1%">
+    {{.Version}}
+</div>
+<div class="text-leader"
+     style="position:absolute;font-size: 1.5vw;font-weight: 500;bottom:1%;left:50%;transform: translate(-50%);">
+    www.zapsi.eu
+</div>

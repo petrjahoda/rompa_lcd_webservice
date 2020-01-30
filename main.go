@@ -12,7 +12,7 @@ import (
 	"time"
 )
 
-const version = "2020.1.1.23"
+const version = "2020.1.1.30"
 const deleteLogsAfter = 240 * time.Hour
 
 func main() {
@@ -87,6 +87,15 @@ func StreamOverview(streamer *sse.Streamer) {
 		downtimePercent := downtime * 100 / sum
 		repairPercent := repair * 100 / sum
 		offlinePercent := 100 - productionPercent - downtimePercent - repair
+		floatPointMiscalculation := offline == 0 && offlinePercent > 0
+		if floatPointMiscalculation {
+			offlinePercent = 0
+			if downtimePercent > productionPercent {
+				downtimePercent++
+			} else {
+				productionPercent++
+			}
+		}
 		LogInfo("MAIN", "Production: "+strconv.Itoa(productionPercent)+", Downtime: "+strconv.Itoa(downtimePercent)+", Offline: "+strconv.Itoa(offlinePercent))
 		streamer.SendString("", "overview", "Produkce "+strconv.Itoa(productionPercent)+"%;Prostoj "+strconv.Itoa(downtimePercent)+"%;Vypnuto "+strconv.Itoa(offlinePercent)+"%;Porucha "+strconv.Itoa(repairPercent*100)+"%")
 		time.Sleep(10 * time.Second)

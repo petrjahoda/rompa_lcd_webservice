@@ -12,7 +12,7 @@ import (
 	"time"
 )
 
-const version = "2020.1.2.1"
+const version = "2020.1.2.4"
 const deleteLogsAfter = 240 * time.Hour
 
 func main() {
@@ -105,10 +105,10 @@ func StreamOverview(streamer *sse.Streamer) {
 func StreamWorkplaces(streamer *sse.Streamer) {
 	var workplaces []Workplace
 	for {
+		LogInfo("MAIN", "Streaming workplaces")
 		workplaces = nil
 		connectionString, dialect := CheckDatabaseType()
 		db, err := gorm.Open(dialect, connectionString)
-
 		defer db.Close()
 		if err != nil {
 			LogError("MAIN", "Problem opening "+DatabaseName+" database: "+err.Error())
@@ -116,6 +116,7 @@ func StreamWorkplaces(streamer *sse.Streamer) {
 			continue
 		}
 		db.Where("WorkplaceDivisionID = ?", 1).Find(&workplaces)
+		LogInfo("MAIN", "Workplaces count: "+strconv.Itoa(len(workplaces)))
 		for _, workplace := range workplaces {
 			terminalInputOrder := TerminalInputOrder{}
 			db.Where("DeviceID = ?", workplace.DeviceID).Where("DTE is null").Find(&terminalInputOrder)
@@ -137,7 +138,23 @@ func StreamWorkplaces(streamer *sse.Streamer) {
 			if terminalInputIdle.OID > 0 {
 				color = "orange"
 			}
-			tools, products := GetInforData(order)
+			tools := ""
+			products := ""
+			switch order.Name {
+			case "Internal":
+				{
+					LogInfo(workplace.Name, "Internal order open")
+				}
+			case "":
+				{
+					LogInfo(workplace.Name, "No open order")
+				}
+			default:
+				{
+					LogInfo(workplace.Name, "Getting Infor data for order "+order.Name)
+					tools, products = GetInforData(order)
+				}
+			}
 			duration, err := durationfmt.Format(time.Now().Sub(workplaceState.DTS), "%dd %hh %mm")
 			if err != nil {
 				LogError(workplace.Name, "Problem parsing datetime: "+err.Error())
@@ -153,8 +170,6 @@ func GetInforData(order Order) (string, string) {
 	if err != nil {
 		println("Error opening db: " + err.Error())
 		return "", ""
-	} else {
-		println("Database open")
 	}
 	defer db.Close()
 	var tools string
@@ -163,7 +178,7 @@ func GetInforData(order Order) (string, string) {
 	row := db.Raw(command).Row()
 	err = row.Scan(&tools, &items)
 	if err != nil {
-		println(err.Error())
+		LogError(order.Name, err.Error())
 	}
 	return strings.Replace(tools, " ", "", 1), strings.Replace(items, " ", "", 1)
 }

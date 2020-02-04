@@ -133,6 +133,8 @@ func StreamWorkplaces(streamer *sse.Streamer) {
 				order := Order{}
 				db.Where("OID = ?", terminalInputOrder.OrderID).Find(&order)
 				tools, products = GetToolsAndProductsForWorkplace(order, workplace)
+			} else {
+				LogInfo(workplace.Name, "No open order")
 			}
 			terminalInputIdle := TerminalInputIdle{}
 			db.Where("DeviceID = ?", workplace.DeviceID).Where("DTE is null").Where("IdleId=136").Find(&terminalInputIdle)
@@ -153,12 +155,6 @@ func GetToolsAndProductsForWorkplace(order Order, workplace Workplace) (string, 
 		{
 			LogInfo(workplace.Name, "Internal order open")
 			return "", ""
-		}
-	case "":
-		{
-			LogInfo(workplace.Name, "No open order")
-			return "", ""
-
 		}
 	default:
 		{

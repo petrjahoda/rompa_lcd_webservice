@@ -128,6 +128,7 @@ func StreamWorkplaces(streamer *sse.Streamer) {
 			db.Where("WorkplaceID = ?", workplace.OID).Where("DTE is null").Find(&workplaceState)
 			terminalInputIdle := TerminalInputIdle{}
 			db.Where("DeviceID = ?", workplace.DeviceID).Where("DTE is null").Where("IdleId=136").Find(&terminalInputIdle)
+			repairTerminalIdleOpened := terminalInputIdle.OID > 0
 			color := "yellow"
 			switch workplaceState.StateID {
 			case 1:
@@ -135,7 +136,7 @@ func StreamWorkplaces(streamer *sse.Streamer) {
 			case 2:
 				color = "red"
 			}
-			if terminalInputIdle.OID > 0 {
+			if repairTerminalIdleOpened {
 				color = "orange"
 			}
 			tools := ""

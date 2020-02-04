@@ -7,8 +7,8 @@ RUN apk add tzdata
 RUN rm -rf /var/cache/apk/*
 RUN cp /usr/share/zoneinfo/Europe/Prague /etc/localtime
 WORKDIR /bin
-COPY /linux /bin
 COPY /css /bin/css
 COPY /html /bin/html
 COPY /js /bin/js
+COPY /linux /bin
 ENTRYPOINT rompa_lcd_webservice_linux

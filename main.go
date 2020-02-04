@@ -118,51 +118,69 @@ func StreamWorkplaces(streamer *sse.Streamer) {
 		db.Where("WorkplaceDivisionID = ?", 1).Find(&workplaces)
 		LogInfo("MAIN", "Workplaces count: "+strconv.Itoa(len(workplaces)))
 		for _, workplace := range workplaces {
-			terminalInputOrder := TerminalInputOrder{}
-			db.Where("DeviceID = ?", workplace.DeviceID).Where("DTE is null").Find(&terminalInputOrder)
-			user := User{}
-			db.Where("OID = ?", terminalInputOrder.UserID).Find(&user)
-			order := Order{}
-			db.Where("OID = ?", terminalInputOrder.OrderID).Find(&order)
 			workplaceState := WorkplaceState{}
 			db.Where("WorkplaceID = ?", workplace.OID).Where("DTE is null").Find(&workplaceState)
+			terminalInputOrder := TerminalInputOrder{}
+			db.Where("DeviceID = ?", workplace.DeviceID).Where("DTE is null").Find(&terminalInputOrder)
+			workplaceHasOpenOrder := terminalInputOrder.OID > 0
+			var tools string
+			var products string
+			var userName string
+			if workplaceHasOpenOrder {
+				user := User{}
+				db.Where("OID = ?", terminalInputOrder.UserID).Find(&user)
+				userName = user.Name
+				order := Order{}
+				db.Where("OID = ?", terminalInputOrder.OrderID).Find(&order)
+				tools, products = GetToolsAndProductsForWorkplace(order, workplace)
+			}
 			terminalInputIdle := TerminalInputIdle{}
 			db.Where("DeviceID = ?", workplace.DeviceID).Where("DTE is null").Where("IdleId=136").Find(&terminalInputIdle)
-			repairTerminalIdleOpened := terminalInputIdle.OID > 0
-			color := "yellow"
-			switch workplaceState.StateID {
-			case 1:
-				color = "green"
-			case 2:
-				color = "red"
-			}
-			if repairTerminalIdleOpened {
-				color = "orange"
-			}
-			tools := ""
-			products := ""
-			switch order.Name {
-			case "Internal":
-				{
-					LogInfo(workplace.Name, "Internal order open")
-				}
-			case "":
-				{
-					LogInfo(workplace.Name, "No open order")
-				}
-			default:
-				{
-					LogInfo(workplace.Name, "Getting Infor data for order "+order.Name)
-					tools, products = GetInforData(order)
-				}
-			}
+			color := GetColorForWorkplace(workplaceState, terminalInputIdle.OID)
 			duration, err := durationfmt.Format(time.Now().Sub(workplaceState.DTS), "%dd %hh %mm")
 			if err != nil {
 				LogError(workplace.Name, "Problem parsing datetime: "+err.Error())
 			}
-			streamer.SendString("", "workplaces", workplace.Name+";"+workplace.Name+"<br>"+user.Name+"<br>"+tools+"<br>"+products+"<span class=\"badge-bottom\">"+duration+"</span>;"+color)
+			streamer.SendString("", "workplaces", workplace.Name+";"+workplace.Name+"<br>"+userName+"<br>"+tools+"<br>"+products+"<span class=\"badge-bottom\">"+duration+"</span>;"+color)
 		}
 		time.Sleep(10 * time.Second)
+	}
+}
+
+func GetToolsAndProductsForWorkplace(order Order, workplace Workplace) (string, string) {
+	switch order.Name {
+	case "Internal":
+		{
+			LogInfo(workplace.Name, "Internal order open")
+			return "", ""
+		}
+	case "":
+		{
+			LogInfo(workplace.Name, "No open order")
+			return "", ""
+
+		}
+	default:
+		{
+			LogInfo(workplace.Name, "Getting Infor data for order "+order.Name)
+			tools, products := GetInforData(order)
+			return tools, products
+		}
+	}
+}
+
+func GetColorForWorkplace(workplaceState WorkplaceState, terminalInputIdleId int) string {
+	repairTerminalIdleOpened := terminalInputIdleId > 0
+	if repairTerminalIdleOpened {
+		return "orange"
+	}
+	switch workplaceState.StateID {
+	case 1:
+		return "green"
+	case 2:
+		return "red"
+	default:
+		return "yellow"
 	}
 }
 

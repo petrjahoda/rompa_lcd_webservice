@@ -12,7 +12,7 @@ import (
 	"time"
 )
 
-const version = "2020.1.2.4"
+const version = "2020.1.2.5"
 const deleteLogsAfter = 240 * time.Hour
 
 func main() {
@@ -37,7 +37,35 @@ func main() {
 	go StreamWorkplaces(workplaces)
 	go StreamOverview(overview)
 	LogInfo("MAIN", "Server running")
+	RestartAllLCDs()
 	_ = http.ListenAndServe(":80", router)
+}
+
+func RestartAllLCDs() {
+	var televisions []Lcd
+	connectionString, dialect := CheckDatabaseType()
+	db, err := gorm.Open(dialect, connectionString)
+
+	if err != nil {
+		LogError("MAIN", "Problem opening "+DatabaseName+" database: "+err.Error())
+		return
+	}
+	defer db.Close()
+	db.Find(&televisions)
+
+	for _, television := range televisions {
+		LogInfo("MAIN", "Restarting television ["+television.Name+"] with ip address ["+television.IPAddress+"]")
+		client := http.Client{
+			Timeout: 5 * time.Second,
+		}
+		response, err := client.Get("http://" + television.IPAddress + "/restart.php")
+		if err != nil {
+			LogWarning("MAIN", "Television is offline")
+			continue
+		}
+		defer response.Body.Close()
+		LogInfo("MAIN", "Television ["+television.Name+"] with ip address ["+television.IPAddress+"] restarted")
+	}
 }
 
 func StreamOverview(streamer *sse.Streamer) {

@@ -7,6 +7,16 @@ import (
 	"time"
 )
 
+type Lcd struct {
+	OID       int    `gorm:"column:OID"`
+	Name      string `gorm:"column:Name"`
+	IPAddress string `gorm:"column:IPAddress"`
+}
+
+func (Lcd) TableName() string {
+	return "lcd"
+}
+
 type TerminalInputOrder struct {
 	OID      int       `gorm:"column:OID"`
 	DTS      time.Time `gorm:"column:DTS"`

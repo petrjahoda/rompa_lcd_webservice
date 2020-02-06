@@ -12,7 +12,7 @@ import (
 	"time"
 )
 
-const version = "2020.1.2.5"
+const version = "2020.1.2.6"
 const deleteLogsAfter = 240 * time.Hour
 
 func main() {
@@ -62,9 +62,10 @@ func RestartAllLCDs() {
 		if err != nil {
 			LogWarning("MAIN", "Television is offline")
 			continue
+		} else {
+			response.Body.Close()
+			LogInfo("MAIN", "Television ["+television.Name+"] with ip address ["+television.IPAddress+"] restarted")
 		}
-		defer response.Body.Close()
-		LogInfo("MAIN", "Television ["+television.Name+"] with ip address ["+television.IPAddress+"] restarted")
 	}
 }
 
@@ -161,18 +162,23 @@ func StreamWorkplaces(streamer *sse.Streamer) {
 				order := Order{}
 				db.Where("OID = ?", terminalInputOrder.OrderID).Find(&order)
 				tools, products = GetToolsAndProductsForWorkplace(order, workplace)
+				LogInfo(workplace.Name, "Data for order downloaded")
 			} else {
 				LogInfo(workplace.Name, "No open order, not downloading Infor data")
 			}
 			terminalInputIdle := TerminalInputIdle{}
 			db.Where("DeviceID = ?", workplace.DeviceID).Where("DTE is null").Where("IdleId=136").Find(&terminalInputIdle)
 			color := GetColorForWorkplace(workplaceState, terminalInputIdle.OID)
+			LogInfo(workplace.Name, "Workplace color: "+color)
 			duration, err := durationfmt.Format(time.Now().Sub(workplaceState.DTS), "%dd %hh %mm")
 			if err != nil {
 				LogError(workplace.Name, "Problem parsing datetime: "+err.Error())
 			}
+			LogInfo(workplace.Name, "Streaming data to LCD")
 			streamer.SendString("", "workplaces", workplace.Name+";"+workplace.Name+"<br>"+userName+"<br>"+tools+"<br>"+products+"<span class=\"badge-bottom\">"+duration+"</span>;"+color)
+			LogInfo(workplace.Name, "Data streamed")
 		}
+		LogInfo("MAIN", "Workplaces streamed, waiting 10 second for another run")
 		time.Sleep(10 * time.Second)
 	}
 }

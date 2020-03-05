@@ -12,7 +12,7 @@ import (
 	"time"
 )
 
-const version = "2020.1.2.8"
+const version = "2020.1.3.5"
 const deleteLogsAfter = 240 * time.Hour
 
 func main() {
@@ -76,7 +76,6 @@ func StreamOverview(streamer *sse.Streamer) {
 		workplaces = nil
 		connectionString, dialect := CheckDatabaseType()
 		db, err := gorm.Open(dialect, connectionString)
-		defer db.Close()
 		if err != nil {
 			LogError("MAIN", "Problem opening "+DatabaseName+" database: "+err.Error())
 			time.Sleep(10 * time.Second)
@@ -127,6 +126,7 @@ func StreamOverview(streamer *sse.Streamer) {
 		}
 		LogInfo("MAIN", "Production: "+strconv.Itoa(productionPercent)+", Downtime: "+strconv.Itoa(downtimePercent)+", Offline: "+strconv.Itoa(offlinePercent))
 		streamer.SendString("", "overview", "Produkce "+strconv.Itoa(productionPercent)+"%;Prostoj "+strconv.Itoa(downtimePercent)+"%;Vypnuto "+strconv.Itoa(offlinePercent)+"%;Porucha "+strconv.Itoa(repairPercent*100)+"%")
+		db.Close()
 		time.Sleep(10 * time.Second)
 	}
 }
@@ -138,7 +138,6 @@ func StreamWorkplaces(streamer *sse.Streamer) {
 		workplaces = nil
 		connectionString, dialect := CheckDatabaseType()
 		db, err := gorm.Open(dialect, connectionString)
-		defer db.Close()
 		if err != nil {
 			LogError("MAIN", "Problem opening "+DatabaseName+" database: "+err.Error())
 			time.Sleep(10 * time.Second)
@@ -179,6 +178,7 @@ func StreamWorkplaces(streamer *sse.Streamer) {
 			LogInfo(workplace.Name, "Data streamed")
 		}
 		LogInfo("MAIN", "Workplaces streamed, waiting 10 second for another run")
+		db.Close()
 		time.Sleep(10 * time.Second)
 	}
 }

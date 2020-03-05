@@ -28,11 +28,11 @@ func LcdRompa(writer http.ResponseWriter, r *http.Request, params httprouter.Par
 
 	connectionString, dialect := CheckDatabaseType()
 	db, err := gorm.Open(dialect, connectionString)
+	defer db.Close()
 
 	if err != nil {
 		LogError("MAIN", "Problem opening "+DatabaseName+" database: "+err.Error())
 	}
-	defer db.Close()
 	db.Where("WorkplaceDivisionID = ?", 1).Order("Name asc").Find(&workplaces)
 
 	for _, workplace := range workplaces {

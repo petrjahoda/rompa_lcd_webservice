@@ -12,7 +12,7 @@ import (
 	"time"
 )
 
-const version = "2020.1.3.5"
+const version = "2020.4.1.26"
 const deleteLogsAfter = 240 * time.Hour
 
 func main() {
@@ -45,12 +45,11 @@ func RestartAllLCDs() {
 	var televisions []Lcd
 	connectionString, dialect := CheckDatabaseType()
 	db, err := gorm.Open(dialect, connectionString)
-
+	defer db.Close()
 	if err != nil {
 		LogError("MAIN", "Problem opening "+DatabaseName+" database: "+err.Error())
 		return
 	}
-	defer db.Close()
 	db.Find(&televisions)
 
 	for _, television := range televisions {
@@ -216,11 +215,11 @@ func GetColorForWorkplace(workplaceState WorkplaceState, terminalInputIdleId int
 
 func GetInforData(order Order) (string, string) {
 	db, err := gorm.Open("mssql", "sqlserver://DataReader:RompaCZ@10.60.1.5/ERPLN105?database=rompaln")
+	defer db.Close()
 	if err != nil {
 		println("Error opening db: " + err.Error())
 		return "", ""
 	}
-	defer db.Close()
 	var tools string
 	var items string
 	command := "select	stuff((select ', '+ltrim((t_tool)) from ttirpt2401000 T where T.t_item=PS.t_mitm and T.t_prmd=(PS.t_prmd) and T.t_prmv=(PS.t_pmrv) FOR XML path('')),1,1,'') Tools,		stuff((select ', '+ltrim((t_pitm)) from ttirpt2301000 Pr where Pr.t_prmd=(PS.t_prmd) and Pr.t_prmv=(PS.t_pmrv) FOR XML path('')),1,1,'') Items from ttirpt4011000 PS		where PS.t_prsh='" + order.Name + "'"

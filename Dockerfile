@@ -11,4 +11,4 @@ COPY /css /bin/css
 COPY /html /bin/html
 COPY /js /bin/js
 COPY /linux /bin
-ENTRYPOINT rompa_lcd_webservice_linux
+ENTRYPOINT rompa_lcd_webservice

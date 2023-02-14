@@ -3,8 +3,6 @@ module rompa_lcd_webservice
 go 1.13
 
 require (
-	cloud.google.com/go v0.70.0 // indirect
-	github.com/apache/thrift v0.12.0 // indirect
 	github.com/davidscholberg/go-durationfmt v0.0.0-20170122144659-64843a2083d3
 	github.com/denisenkom/go-mssqldb v0.9.0 // indirect
 	github.com/goodsign/monday v1.0.0
@@ -15,8 +13,5 @@ require (
 	github.com/lib/pq v1.9.0 // indirect
 	github.com/logrusorgru/aurora v2.0.3+incompatible
 	github.com/mattn/go-sqlite3 v1.14.5 // indirect
-	github.com/openzipkin/zipkin-go v0.1.6 // indirect
-	github.com/prometheus/client_golang v0.9.3-0.20190127221311-3c4408c8b829 // indirect
 	golang.org/x/crypto v0.0.0-20201124201722-c8d3bf9c5392 // indirect
-	google.golang.org/appengine v1.6.7 // indirect
 )
